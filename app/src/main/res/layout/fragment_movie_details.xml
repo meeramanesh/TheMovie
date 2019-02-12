@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.meera.themovie.ui.viewmodel.MovieDetailsViewModel"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack">
+
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/movieTitleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@{viewModel.title}"
+                android:textAlignment="center"
+                android:textSize="@dimen/titleSize_30"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:padding="@dimen/padding_5"/>
+
+
+        <ImageView
+                android:id="@+id/moviePosterView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/movieTitleView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/overViewTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/moviePosterView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/overview"
+                android:textAlignment="center"
+                android:textSize="@dimen/titleSize_20"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:padding="@dimen/padding_5"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/overViewTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/overViewTitleTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@{viewModel.overView}"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/titleSize_15"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:padding="@dimen/padding_5"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/categoryTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/overViewTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/category"
+                android:textAlignment="textStart"
+                android:textSize="@dimen/titleSize_20"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:padding="@dimen/padding_5"/>
+
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/categoryView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/categoryTitleTextView">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

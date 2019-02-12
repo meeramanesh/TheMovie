@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_icon_size">45dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+
+    <dimen name="titleSize_30">30sp</dimen>
+    <dimen name="titleSize_25">25sp</dimen>
+
+    <dimen name="titleSize_20">20sp</dimen>
+    <dimen name="titleSize_15">15sp</dimen>
+
+    <dimen name="titleSize_10">10sp</dimen>
+    <dimen name="titleSize_8">8sp</dimen>
+
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_7">7dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+
+
+</resources>

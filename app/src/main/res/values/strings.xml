@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">The Movie</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="movie_details">Movie Details</string>
+
+    <string name="title">Title : </string>
+    <string name="language">Language : </string>
+    <string name="overview">OverView</string>
+    <string name="to">TO</string>
+    <string name="cancel">Cancel</string>
+    <string name="empty_movie_list">Sorry, No Movies are available</string>
+
+    <string name="ok">OK</string>
+    <string name="selectYear">Please select year</string>
+    <string name="generalLoading">Processing your request</string>
+
+    <string name="vote">Vote</string>
+    <string name="userScore">User Score</string>
+
+    <string name="category">Category</string>
+    <string name="releaseDate">Release Date : </string>
+
+    <string name="production">Production</string>
+
+</resources>
